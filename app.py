@@ -3,7 +3,7 @@ import time
 
 app = Flask(__name__)
 # @app.route("/bot",method=["POST"])
-@app.route("/",method=["POST"])
+@app.route("/")
 
 def hello():
     return 'Hello World'
