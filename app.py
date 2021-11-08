@@ -1,18 +1,15 @@
-# from flask import Flask, jsonify, request
-from flask import Flask
+from flask import Flask, jsonify, request
 
 app = Flask(__name__)
-# @app.route("/bot",method=["POST"])
-@app.route('/')
-def hello():
-    return 'Hello World'
+@app.route("/bot",method=["POST"])
+
+
 #response
-# def response():
-#     query  = dict(request.form)['query']
-#     result = 'pewdiepie'
-#     return jsonify({"response":result})
+def response():
+    query  = dict(request.form)['query']
+    result = 'pewdiepie'
+    return jsonify({"response":result})
 
 if __name__ == '__main__':
-    app.run()
-#     app.run(host="0.0.0.0")
+    app.run(host="0.0.0.0")
 
